@@ -12,7 +12,6 @@ body {
     width: 100%;
     height: 100vh;
     margin: 0 auto;
-    /* background-color: rgb(240, 240, 240); */
 }
 
 .comparison-box-qc-wrapper {
@@ -22,26 +21,60 @@ body {
     align-items: center;
     align-content: center;
     width: 70%;
-    height: 30vh;
+    height: 50vh;
     margin: 0 auto;
     background-color: rgb(240, 240, 240);
 }
 
-.hours-box,
-.price-box {
-    width: 40%;
+.selection-box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.selection-box-title {
+    width: 100%;
+    text-align: center;
+}
+
+.hours-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 250px;
+    height: auto;
+    /* margin-top: -80px; */
     /* border: 1px solid red; */
 }
 
 .hours-title,
-.price-title {
+#slider-hours-results {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.day-box,
+.month-box,
+.year-box {
+    width: 33%;
+}
+
+.day-title,
+.month-title,
+.year-title {
     padding: 0;
     margin: 0;
     text-align: center;
 }
 
-#slider-hours-results,
-#slider-price-results {
+#slider-day-results,
+#slider-month-results,
+#slider-year-results {
     width: 80%;
     padding: 2%;
     margin: 0 auto;
@@ -49,5 +82,23 @@ body {
 }
 
 .slider-box {
-    padding: 10% 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 5% 0;
+}
+
+.slider-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2% 0;
+}
+
+#slider-hours-range {
+    width: 80%;
 }

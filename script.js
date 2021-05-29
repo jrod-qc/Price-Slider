@@ -1,12 +1,15 @@
 var sliderHoursRange = document.getElementById("slider-hours-range");
 var sliderHoursRangeResults = document.getElementById("slider-hours-results");
-var sliderPriceRangeResults = document.getElementById("slider-price-results");
-var kwattPrice = .30;
+var sliderDayRangeResults = document.getElementById("slider-day-results");
+var sliderMonthResults = document.getElementById("slider-month-results");
+var sliderYearResults = document.getElementById("slider-year-results");
+var kwattPrice = .35;
 
 sliderHoursRangeResults.innerHTML = sliderHoursRange.value;
 
 
 sliderHoursRange.oninput = function() {
-    sliderPriceRangeResults.innerHTML = "$ " + Math.round(kwattPrice * this.value * 100) / 100 + " KiloWatts";
+    // sliderHoursRangeResults.innerHTML = "$ " + Math.round(kwattPrice * this.value * 100) / 100;
     sliderHoursRangeResults.innerHTML = this.value;
+    // sliderKilowattsResults.innerHTML = this.value * 1000;
 }

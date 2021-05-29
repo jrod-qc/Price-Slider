@@ -14,23 +14,47 @@
 <body>
     <div class="comparison-box-qc">
         <div class="comparison-box-qc-wrapper">
-
-            <!-- This is the hours Section -->
-            <div class="hours-box">
-                <h2 class="hours-title">Hours</h2>
-                <h3 id="slider-hours-results"> </h3>
-            </div>
-
-            <!-- This is the Price Section -->
-            <div class="price-box">
-                <h2 class="price-title">Price</h2>
-                <h3 id="slider-price-results">$ 0 KiloWatts</h3>
+            <div class="selection-box">
+                <h2 class="selection-box-title">Select Whole House Fan</h2>
+                <select id="">
+                    <option value="">Select Fan</option>
+                    <option value="">Trident</option>
+                    <option value="">Stealth</option>
+                </select>
             </div>
 
             <!-- This is the Slider -->
             <div class="slider-box">
-                <input type="range" name="silder-hours-range" id="slider-hours-range" min="0" max="10" value="0">
+                <!-- This is the Hours Section -->
+                <div class="hours-box">
+                    <h2 class="hours-title">Hours</h2>
+                    <h3 id="slider-hours-results"> 0</h3>
+                </div>
+                <!-- This is the Slider Input -->
+                <div class="slider-wrapper">
+                    <input type="range" name="silder-hours-range" id="slider-hours-range" min="0" max="12" value="0">
+                </div>
+
             </div>
+
+
+            <!-- This is the Day Results -->
+            <div class="day-box">
+                <h2 class="day-title">Day</h2>
+                <h3 id="slider-day-results">$0</h3>
+            </div>
+            <!-- This is the Month Results -->
+            <div class="month-box">
+                <h2 class="month-title">Month</h2>
+                <h3 id="slider-month-results">$0</h3>
+            </div>
+            <!-- This is the Year Results -->
+            <div class="year-box">
+                <h2 class="year-title">Year</h2>
+                <h3 id="slider-year-results">$0</h3>
+            </div>
+
+
 
         </div>
     </div>
