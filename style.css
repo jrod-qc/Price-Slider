@@ -11,10 +11,12 @@ body {
 .comparison-main-box {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     width: 100%;
+    max-width: 850px;
     height: auto;
+    margin: 0 auto;
 }
 
 .comparison-box-qc {
@@ -33,7 +35,7 @@ body {
     justify-content: center;
     align-items: center;
     align-content: center;
-    width: 70%;
+    width: 80%;
     max-width: 500px;
     height: 50vh;
     margin: 0 auto;
@@ -221,7 +223,7 @@ input[type="range"]::-webkit-slider-thumb::before {
     justify-content: center;
     align-items: center;
     align-content: center;
-    width: 70%;
+    width: 80%;
     max-width: 500px;
     height: 50vh;
     margin: 0 auto;
