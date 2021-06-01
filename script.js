@@ -30,8 +30,6 @@ function onFanSelect() {
 }
 
 // This is the Trident Selection
-
-
 function onTridentSelect() {
     // This is the Model 1.5
     var tridentSelection = document.getElementById("trident-models").value;
@@ -180,6 +178,8 @@ function onTridentSelect() {
     }
 }
 
+
+// This is the Stealth Selection
 function onStealthSelect() {
     // This is the Model 1.5
     var stealthSelection = document.getElementById("stealth-models").value;
@@ -325,5 +325,72 @@ function onStealthSelect() {
         }
     } else {
         alert("Please Make A Model Selection");
+    }
+}
+
+var sliderDayRangeResultsAC = document.getElementById("slider-day-results-ac");
+var sliderMonthRangeResultsAC = document.getElementById("slider-month-results-ac");
+var sliderYearRangeResultsAC = document.getElementById("slider-year-results-ac");
+var sliderHoursRangeAC = document.getElementById("slider-hours-range-ac");
+var sliderHoursRangeResultsAC = document.getElementById("slider-hours-results-ac");
+
+// This is the AC Section
+
+function onAcKwhSelect() {
+    var acKwhSelection = document.getElementById("ac-kwh-selection").value;
+
+    if (acKwhSelection === "3000") {
+        document.getElementById("slider-and-results-kwh-wrapper").style.display = "flex";
+
+        sliderHoursRangeResultsAC.innerHTML = sliderHoursRangeAC.value;
+        sliderHoursRangeAC.oninput = function() {
+            sliderHoursRangeResultsAC.innerHTML = this.value;
+
+            var watts3000 = new fan(3000, 3000, 1000, .35);
+            // This is for the day
+            sliderDayRangeResultsAC.innerHTML = "$" + Math.round(watts3000.watts / watts3000.kwh * this.value * watts3000.kwhPrice * 100) / 100;
+
+            // This is for the Month
+            sliderMonthRangeResultsAC.innerHTML = "$" + Math.round(watts3000.watts / watts3000.kwh * this.value * 30 * watts3000.kwhPrice * 100) / 100;
+
+            // This is for the Year
+            sliderYearRangeResultsAC.innerHTML = "$" + Math.round(watts3000.watts / watts3000.kwh * this.value * 365 * watts3000.kwhPrice * 100) / 100;
+        }
+    } else if (acKwhSelection === "5000") {
+        document.getElementById("slider-and-results-kwh-wrapper").style.display = "flex";
+
+        sliderHoursRangeResultsAC.innerHTML = sliderHoursRangeAC.value;
+        sliderHoursRangeAC.oninput = function() {
+            sliderHoursRangeResultsAC.innerHTML = this.value;
+
+            var watts5000 = new fan(5000, 5000, 1000, .35);
+            // This is for the day
+            sliderDayRangeResultsAC.innerHTML = "$" + Math.round(watts5000.watts / watts5000.kwh * this.value * watts5000.kwhPrice * 100) / 100;
+
+            // This is for the Month
+            sliderMonthRangeResultsAC.innerHTML = "$" + Math.round(watts5000.watts / watts5000.kwh * this.value * 30 * watts5000.kwhPrice * 100) / 100;
+
+            // This is for the Year
+            sliderYearRangeResultsAC.innerHTML = "$" + Math.round(watts5000.watts / watts5000.kwh * this.value * 365 * watts5000.kwhPrice * 100) / 100;
+        }
+    } else if (acKwhSelection === "8000") {
+        document.getElementById("slider-and-results-kwh-wrapper").style.display = "flex";
+
+        sliderHoursRangeResultsAC.innerHTML = sliderHoursRangeAC.value;
+        sliderHoursRangeAC.oninput = function() {
+            sliderHoursRangeResultsAC.innerHTML = this.value;
+
+            var watts8000 = new fan(8000, 8000, 1000, .35);
+            // This is for the day
+            sliderDayRangeResultsAC.innerHTML = "$" + Math.round(watts8000.watts / watts8000.kwh * this.value * watts8000.kwhPrice * 100) / 100;
+
+            // This is for the Month
+            sliderMonthRangeResultsAC.innerHTML = "$" + Math.round(watts8000.watts / watts8000.kwh * this.value * 30 * watts8000.kwhPrice * 100) / 100;
+
+            // This is for the Year
+            sliderYearRangeResultsAC.innerHTML = "$" + Math.round(watts8000.watts / watts8000.kwh * this.value * 365 * watts8000.kwhPrice * 100) / 100;
+        }
+    } else {
+        alert("Please Select KWH");
     }
 }
