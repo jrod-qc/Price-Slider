@@ -13,25 +13,71 @@
 
 <body>
     <div class="comparison-box-qc">
-        <div class="comparison-box-qc-wrapper">
+        <div id="comparison-box-qc-wrapper">
+            <div class="selection-box">
+                <h2 class="selection-box-title">Select Whole House Fan</h2>
+                <!-- This is the fan selection -->
+                <select id="fan-selection" onchange="onFanSelect()">
+                    <option value="">Select Fan</option>
+                    <option value="trident">Trident</option>
+                    <option value="stealth">Stealth</option>
+                </select>
+                <!-- This is the trident models dropdown -->
+                <select id="trident-models" onchange="onTridentSelect()">
+                    <option value="">Please Select Model</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2.5">2.5</option>
+                    <option value="3.3">3.3</option>
+                    <option value="4.8">4.8</option>
+                    <option value="5.5">5.5</option>
+                    <option value="6.0">6.0</option>
+                    <option value="7.0">7.0</option>
+                </select>
 
-            <!-- This is the hours Section -->
-            <div class="hours-box">
-                <h2 class="hours-title">Hours</h2>
-                <h3 id="slider-hours-results"> </h3>
+                <!-- This is the trident models dropdown -->
+                <select id="stealth-models" onchange="onStealthSelect()">
+                    <option value="">Please Select Model</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2.5">2.5</option>
+                    <option value="3.3">3.3</option>
+                    <option value="4.8">4.8</option>
+                    <option value="5.5">5.5</option>
+                    <option value="6.0">6.0</option>
+                    <option value="7.0">7.0</option>
+                </select>
             </div>
 
-            <!-- This is the Price Section -->
-            <div class="price-box">
-                <h2 class="price-title">Price</h2>
-                <h3 id="slider-price-results">$ 0 KiloWatts</h3>
-            </div>
+            <div id="slider-and-results-wrapper">
+                <!-- This is the Slider -->
+                <div class="slider-box">
+                    <!-- This is the Hours Section -->
+                    <div class="hours-box">
+                        <h2 class="hours-title">Hours</h2>
+                        <h3 id="slider-hours-results"> 0</h3>
+                    </div>
+                    <!-- This is the Slider Input -->
+                    <div class="slider-wrapper">
+                        <input type="range" name="silder-hours-range" id="slider-hours-range" min="0" max="12" value="0">
+                    </div>
+                </div>
 
-            <!-- This is the Slider -->
-            <div class="slider-box">
-                <input type="range" name="silder-hours-range" id="slider-hours-range" min="0" max="10" value="0">
-            </div>
 
+                <!-- This is the Day Results -->
+                <div class="day-box">
+                    <h2 class="day-title">Day</h2>
+                    <h3 id="slider-day-results">$0</h3>
+                </div>
+                <!-- This is the Month Results -->
+                <div class="month-box">
+                    <h2 class="month-title">Month</h2>
+                    <h3 id="slider-month-results">$0</h3>
+                </div>
+                <!-- This is the Year Results -->
+                <div class="year-box">
+                    <h2 class="year-title">Year</h2>
+                    <h3 id="slider-year-results">$0</h3>
+                </div>
+            </div>
         </div>
     </div>
 
