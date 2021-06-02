@@ -36,7 +36,11 @@ function onTridentSelect() {
     if (tridentSelection == "1.5") {
         document.getElementById("slider-and-results-wrapper").style.display = "flex";
 
-        sliderHoursRangeResults.innerHTML = sliderHoursRange.value;
+        sliderHoursRangeResults.innerHTML = sliderHoursRange.value = 0;
+        sliderDayRangeResults.innerHTML = 0;
+        sliderMonthResults.innerHTML = 0;
+        sliderYearResults.innerHTML = 0;
+
         sliderHoursRange.oninput = function() {
                 sliderHoursRangeResults.innerHTML = this.value;
 
@@ -56,7 +60,11 @@ function onTridentSelect() {
     } else if (tridentSelection == "2.5") {
         document.getElementById("slider-and-results-wrapper").style.display = "flex";
 
-        sliderHoursRangeResults.innerHTML = sliderHoursRange.value;
+        sliderHoursRangeResults.innerHTML = sliderHoursRange.value = 0;
+        sliderDayRangeResults.innerHTML = 0;
+        sliderMonthResults.innerHTML = 0;
+        sliderYearResults.innerHTML = 0;
+
         sliderHoursRange.oninput = function() {
                 sliderHoursRangeResults.innerHTML = this.value;
 
@@ -76,7 +84,11 @@ function onTridentSelect() {
     } else if (tridentSelection == "3.3") {
         document.getElementById("slider-and-results-wrapper").style.display = "flex";
 
-        sliderHoursRangeResults.innerHTML = sliderHoursRange.value;
+        sliderHoursRangeResults.innerHTML = sliderHoursRange.value = 0;
+        sliderDayRangeResults.innerHTML = 0;
+        sliderMonthResults.innerHTML = 0;
+        sliderYearResults.innerHTML = 0;
+
         sliderHoursRange.oninput = function() {
                 sliderHoursRangeResults.innerHTML = this.value;
 
@@ -96,7 +108,11 @@ function onTridentSelect() {
     } else if (tridentSelection == "4.8") {
         document.getElementById("slider-and-results-wrapper").style.display = "flex";
 
-        sliderHoursRangeResults.innerHTML = sliderHoursRange.value;
+        sliderHoursRangeResults.innerHTML = sliderHoursRange.value = 0;
+        sliderDayRangeResults.innerHTML = 0;
+        sliderMonthResults.innerHTML = 0;
+        sliderYearResults.innerHTML = 0;
+
         sliderHoursRange.oninput = function() {
             sliderHoursRangeResults.innerHTML = this.value;
 
@@ -117,7 +133,11 @@ function onTridentSelect() {
     } else if (tridentSelection == "5.5") {
         document.getElementById("slider-and-results-wrapper").style.display = "flex";
 
-        sliderHoursRangeResults.innerHTML = sliderHoursRange.value;
+        sliderHoursRangeResults.innerHTML = sliderHoursRange.value = 0;
+        sliderDayRangeResults.innerHTML = 0;
+        sliderMonthResults.innerHTML = 0;
+        sliderYearResults.innerHTML = 0;
+
         sliderHoursRange.oninput = function() {
                 sliderHoursRangeResults.innerHTML = this.value;
 
@@ -137,7 +157,11 @@ function onTridentSelect() {
     } else if (tridentSelection == "6.0") {
         document.getElementById("slider-and-results-wrapper").style.display = "flex";
 
-        sliderHoursRangeResults.innerHTML = sliderHoursRange.value;
+        sliderHoursRangeResults.innerHTML = sliderHoursRange.value = 0;
+        sliderDayRangeResults.innerHTML = 0;
+        sliderMonthResults.innerHTML = 0;
+        sliderYearResults.innerHTML = 0;
+
         sliderHoursRange.oninput = function() {
                 sliderHoursRangeResults.innerHTML = this.value;
 
@@ -157,7 +181,11 @@ function onTridentSelect() {
     } else if (tridentSelection == "7.0") {
         document.getElementById("slider-and-results-wrapper").style.display = "flex";
 
-        sliderHoursRangeResults.innerHTML = sliderHoursRange.value;
+        sliderHoursRangeResults.innerHTML = sliderHoursRange.value = 0;
+        sliderDayRangeResults.innerHTML = 0;
+        sliderMonthResults.innerHTML = 0;
+        sliderYearResults.innerHTML = 0;
+
         sliderHoursRange.oninput = function() {
             sliderHoursRangeResults.innerHTML = this.value;
 
@@ -186,7 +214,11 @@ function onStealthSelect() {
     if (stealthSelection == "1.5") {
         document.getElementById("slider-and-results-wrapper").style.display = "flex";
 
-        sliderHoursRangeResults.innerHTML = sliderHoursRange.value;
+        sliderHoursRangeResults.innerHTML = sliderHoursRange.value = 0;
+        sliderDayRangeResults.innerHTML = 0;
+        sliderMonthResults.innerHTML = 0;
+        sliderYearResults.innerHTML = 0;
+
         sliderHoursRange.oninput = function() {
                 sliderHoursRangeResults.innerHTML = this.value;
 
@@ -206,7 +238,11 @@ function onStealthSelect() {
     } else if (stealthSelection == "2.5") {
         document.getElementById("slider-and-results-wrapper").style.display = "flex";
 
-        sliderHoursRangeResults.innerHTML = sliderHoursRange.value;
+        sliderHoursRangeResults.innerHTML = sliderHoursRange.value = 0;
+        sliderDayRangeResults.innerHTML = 0;
+        sliderMonthResults.innerHTML = 0;
+        sliderYearResults.innerHTML = 0;
+
         sliderHoursRange.oninput = function() {
                 sliderHoursRangeResults.innerHTML = this.value;
 
@@ -226,7 +262,11 @@ function onStealthSelect() {
     } else if (stealthSelection == "3.3") {
         document.getElementById("slider-and-results-wrapper").style.display = "flex";
 
-        sliderHoursRangeResults.innerHTML = sliderHoursRange.value;
+        sliderHoursRangeResults.innerHTML = sliderHoursRange.value = 0;
+        sliderDayRangeResults.innerHTML = 0;
+        sliderMonthResults.innerHTML = 0;
+        sliderYearResults.innerHTML = 0;
+
         sliderHoursRange.oninput = function() {
                 sliderHoursRangeResults.innerHTML = this.value;
 
@@ -246,7 +286,11 @@ function onStealthSelect() {
     } else if (stealthSelection == "4.8") {
         document.getElementById("slider-and-results-wrapper").style.display = "flex";
 
-        sliderHoursRangeResults.innerHTML = sliderHoursRange.value;
+        sliderHoursRangeResults.innerHTML = sliderHoursRange.value = 0;
+        sliderDayRangeResults.innerHTML = 0;
+        sliderMonthResults.innerHTML = 0;
+        sliderYearResults.innerHTML = 0;
+
         sliderHoursRange.oninput = function() {
             sliderHoursRangeResults.innerHTML = this.value;
 
@@ -267,7 +311,11 @@ function onStealthSelect() {
     } else if (stealthSelection == "5.5") {
         document.getElementById("slider-and-results-wrapper").style.display = "flex";
 
-        sliderHoursRangeResults.innerHTML = sliderHoursRange.value;
+        sliderHoursRangeResults.innerHTML = sliderHoursRange.value = 0;
+        sliderDayRangeResults.innerHTML = 0;
+        sliderMonthResults.innerHTML = 0;
+        sliderYearResults.innerHTML = 0;
+
         sliderHoursRange.oninput = function() {
                 sliderHoursRangeResults.innerHTML = this.value;
 
@@ -287,7 +335,11 @@ function onStealthSelect() {
     } else if (stealthSelection == "6.0") {
         document.getElementById("slider-and-results-wrapper").style.display = "flex";
 
-        sliderHoursRangeResults.innerHTML = sliderHoursRange.value;
+        sliderHoursRangeResults.innerHTML = sliderHoursRange.value = 0;
+        sliderDayRangeResults.innerHTML = 0;
+        sliderMonthResults.innerHTML = 0;
+        sliderYearResults.innerHTML = 0;
+
         sliderHoursRange.oninput = function() {
                 sliderHoursRangeResults.innerHTML = this.value;
 
@@ -307,7 +359,11 @@ function onStealthSelect() {
     } else if (stealthSelection == "7.0") {
         document.getElementById("slider-and-results-wrapper").style.display = "flex";
 
-        sliderHoursRangeResults.innerHTML = sliderHoursRange.value;
+        sliderHoursRangeResults.innerHTML = sliderHoursRange.value = 0;
+        sliderDayRangeResults.innerHTML = 0;
+        sliderMonthResults.innerHTML = 0;
+        sliderYearResults.innerHTML = 0;
+
         sliderHoursRange.oninput = function() {
             sliderHoursRangeResults.innerHTML = this.value;
 
@@ -328,13 +384,14 @@ function onStealthSelect() {
     }
 }
 
+// This is the AC Section
+
 var sliderDayRangeResultsAC = document.getElementById("slider-day-results-ac");
 var sliderMonthRangeResultsAC = document.getElementById("slider-month-results-ac");
 var sliderYearRangeResultsAC = document.getElementById("slider-year-results-ac");
 var sliderHoursRangeAC = document.getElementById("slider-hours-range-ac");
 var sliderHoursRangeResultsAC = document.getElementById("slider-hours-results-ac");
 
-// This is the AC Section
 
 function onAcKwhSelect() {
     var acKwhSelection = document.getElementById("ac-kwh-selection").value;
@@ -342,7 +399,10 @@ function onAcKwhSelect() {
     if (acKwhSelection === "3000") {
         document.getElementById("slider-and-results-kwh-wrapper").style.display = "flex";
 
-        sliderHoursRangeResultsAC.innerHTML = sliderHoursRangeAC.value;
+        sliderHoursRangeResultsAC.innerHTML = sliderHoursRangeAC.value = 0;
+        sliderDayRangeResultsAC.innerHTML = 0;
+        sliderMonthRangeResultsAC.innerHTML = 0;
+        sliderYearRangeResultsAC.innerHTML = 0;
         sliderHoursRangeAC.oninput = function() {
             sliderHoursRangeResultsAC.innerHTML = this.value;
 
@@ -359,7 +419,11 @@ function onAcKwhSelect() {
     } else if (acKwhSelection === "5000") {
         document.getElementById("slider-and-results-kwh-wrapper").style.display = "flex";
 
-        sliderHoursRangeResultsAC.innerHTML = sliderHoursRangeAC.value;
+        sliderHoursRangeResultsAC.innerHTML = sliderHoursRangeAC.value = 0;
+        sliderDayRangeResultsAC.innerHTML = 0;
+        sliderMonthRangeResultsAC.innerHTML = 0;
+        sliderYearRangeResultsAC.innerHTML = 0;
+
         sliderHoursRangeAC.oninput = function() {
             sliderHoursRangeResultsAC.innerHTML = this.value;
 
@@ -376,7 +440,11 @@ function onAcKwhSelect() {
     } else if (acKwhSelection === "8000") {
         document.getElementById("slider-and-results-kwh-wrapper").style.display = "flex";
 
-        sliderHoursRangeResultsAC.innerHTML = sliderHoursRangeAC.value;
+        sliderHoursRangeResultsAC.innerHTML = sliderHoursRangeAC.value = 0;
+        sliderDayRangeResultsAC.innerHTML = 0;
+        sliderMonthRangeResultsAC.innerHTML = 0;
+        sliderYearRangeResultsAC.innerHTML = 0;
+
         sliderHoursRangeAC.oninput = function() {
             sliderHoursRangeResultsAC.innerHTML = this.value;
 
