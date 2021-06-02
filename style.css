@@ -11,10 +11,12 @@ body {
 .comparison-main-box {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     width: 100%;
+    max-width: 850px;
     height: auto;
+    margin: 0 auto;
 }
 
 .comparison-box-qc {
@@ -33,12 +35,14 @@ body {
     justify-content: center;
     align-items: center;
     align-content: center;
-    width: 70%;
+    width: 80%;
     max-width: 500px;
-    height: 50vh;
+    min-height: 400px;
+    height: 50%;
     margin: 0 auto;
     background-color: #1f6eb4;
     box-shadow: 0px 3px 12px 2px #00000040;
+    overflow: auto;
 }
 
 .selection-box {
@@ -221,12 +225,14 @@ input[type="range"]::-webkit-slider-thumb::before {
     justify-content: center;
     align-items: center;
     align-content: center;
-    width: 70%;
+    width: 80%;
     max-width: 500px;
-    height: 50vh;
+    height: 50%;
+    min-height: 400px;
     margin: 0 auto;
     background-color: #727272;
     box-shadow: 0px 3px 12px 2px #00000040;
+    overflow: auto;
 }
 
 .selection-box-ac {
@@ -333,4 +339,18 @@ input[type="range"]::-webkit-slider-thumb::before {
     left: 0;
     width: 100%;
     color: red;
+}
+
+@media only screen and (max-width:768px) {
+    .comparison-box-ac,
+    .comparison-box-qc {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        margin: 20px 0;
+    }
+    #comparison-box-qc-wrapper,
+    #comparison-box-ac-wrapper {
+        width: 90%;
+    }
 }
