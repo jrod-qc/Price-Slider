@@ -19,13 +19,15 @@ function onFanSelect() {
     if (fanSelection == "trident") {
         document.getElementById("trident-models").style.display = "block";
         document.getElementById("stealth-models").style.display = "none";
+        document.getElementById("slider-and-results-wrapper").style.display = "none";
     } else if (fanSelection == "stealth") {
         document.getElementById("trident-models").style.display = "none";
         document.getElementById("stealth-models").style.display = "block";
-
-
+        document.getElementById("slider-and-results-wrapper").style.display = "none";
     } else {
         alert("Please Select a Fan");
+        document.getElementById("trident-models").style.display = "none";
+        document.getElementById("stealth-models").style.display = "none";
     }
 }
 
