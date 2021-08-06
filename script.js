@@ -3,6 +3,8 @@ var sliderHoursRangeResults = document.getElementById("slider-hours-results");
 var sliderDayRangeResults = document.getElementById("slider-day-results");
 var sliderMonthResults = document.getElementById("slider-month-results");
 var sliderYearResults = document.getElementById("slider-year-results");
+document.getElementById("stealth-models").value = "4.8";
+document.getElementById("fan-selection").value = "stealth";
 
 // This is the Template for the fan Object
 
@@ -31,6 +33,8 @@ function onFanSelect() {
     }
 }
 
+onFanSelect();
+
 // This is the Trident Selection
 function onTridentSelect() {
     // This is the Model 1.5
@@ -39,9 +43,9 @@ function onTridentSelect() {
         document.getElementById("slider-and-results-wrapper").style.display = "flex";
 
         sliderHoursRangeResults.innerHTML = sliderHoursRange.value = 0;
-        sliderDayRangeResults.innerHTML = 0;
-        sliderMonthResults.innerHTML = 0;
-        sliderYearResults.innerHTML = 0;
+        sliderDayRangeResults.innerHTML = "$" + 0;
+        sliderMonthResults.innerHTML = "$" + 0;
+        sliderYearResults.innerHTML = "$" + 0;
 
         sliderHoursRange.oninput = function() {
                 sliderHoursRangeResults.innerHTML = this.value;
@@ -63,9 +67,9 @@ function onTridentSelect() {
         document.getElementById("slider-and-results-wrapper").style.display = "flex";
 
         sliderHoursRangeResults.innerHTML = sliderHoursRange.value = 0;
-        sliderDayRangeResults.innerHTML = 0;
-        sliderMonthResults.innerHTML = 0;
-        sliderYearResults.innerHTML = 0;
+        sliderDayRangeResults.innerHTML = "$" + 0;
+        sliderMonthResults.innerHTML = "$" + 0;
+        sliderYearResults.innerHTML = "$" + 0;
 
         sliderHoursRange.oninput = function() {
                 sliderHoursRangeResults.innerHTML = this.value;
@@ -87,9 +91,9 @@ function onTridentSelect() {
         document.getElementById("slider-and-results-wrapper").style.display = "flex";
 
         sliderHoursRangeResults.innerHTML = sliderHoursRange.value = 0;
-        sliderDayRangeResults.innerHTML = 0;
-        sliderMonthResults.innerHTML = 0;
-        sliderYearResults.innerHTML = 0;
+        sliderDayRangeResults.innerHTML = "$" + 0;
+        sliderMonthResults.innerHTML = "$" + 0;
+        sliderYearResults.innerHTML = "$" + 0;
 
         sliderHoursRange.oninput = function() {
                 sliderHoursRangeResults.innerHTML = this.value;
@@ -111,9 +115,9 @@ function onTridentSelect() {
         document.getElementById("slider-and-results-wrapper").style.display = "flex";
 
         sliderHoursRangeResults.innerHTML = sliderHoursRange.value = 0;
-        sliderDayRangeResults.innerHTML = 0;
-        sliderMonthResults.innerHTML = 0;
-        sliderYearResults.innerHTML = 0;
+        sliderDayRangeResults.innerHTML = "$" + 0;
+        sliderMonthResults.innerHTML = "$" + 0;
+        sliderYearResults.innerHTML = "$" + 0;
 
         sliderHoursRange.oninput = function() {
             sliderHoursRangeResults.innerHTML = this.value;
@@ -136,9 +140,9 @@ function onTridentSelect() {
         document.getElementById("slider-and-results-wrapper").style.display = "flex";
 
         sliderHoursRangeResults.innerHTML = sliderHoursRange.value = 0;
-        sliderDayRangeResults.innerHTML = 0;
-        sliderMonthResults.innerHTML = 0;
-        sliderYearResults.innerHTML = 0;
+        sliderDayRangeResults.innerHTML = "$" + 0;
+        sliderMonthResults.innerHTML = "$" + 0;
+        sliderYearResults.innerHTML = "$" + 0;
 
         sliderHoursRange.oninput = function() {
                 sliderHoursRangeResults.innerHTML = this.value;
@@ -160,9 +164,9 @@ function onTridentSelect() {
         document.getElementById("slider-and-results-wrapper").style.display = "flex";
 
         sliderHoursRangeResults.innerHTML = sliderHoursRange.value = 0;
-        sliderDayRangeResults.innerHTML = 0;
-        sliderMonthResults.innerHTML = 0;
-        sliderYearResults.innerHTML = 0;
+        sliderDayRangeResults.innerHTML = "$" + 0;
+        sliderMonthResults.innerHTML = "$" + 0;
+        sliderYearResults.innerHTML = "$" + 0;
 
         sliderHoursRange.oninput = function() {
                 sliderHoursRangeResults.innerHTML = this.value;
@@ -184,9 +188,9 @@ function onTridentSelect() {
         document.getElementById("slider-and-results-wrapper").style.display = "flex";
 
         sliderHoursRangeResults.innerHTML = sliderHoursRange.value = 0;
-        sliderDayRangeResults.innerHTML = 0;
-        sliderMonthResults.innerHTML = 0;
-        sliderYearResults.innerHTML = 0;
+        sliderDayRangeResults.innerHTML = "$" + 0;
+        sliderMonthResults.innerHTML = "$" + 0;
+        sliderYearResults.innerHTML = "$" + 0;
 
         sliderHoursRange.oninput = function() {
             sliderHoursRangeResults.innerHTML = this.value;
@@ -194,10 +198,8 @@ function onTridentSelect() {
             var trident = new fan(7.0, 1147, 1000, .35);
             // This is for the day
             sliderDayRangeResults.innerHTML = "$" + Math.round(trident.watts / trident.kwh * this.value * trident.kwhPrice * 100) / 100;
-
             // This is for the Month
             sliderMonthResults.innerHTML = "$" + Math.round(trident.watts / trident.kwh * this.value * 30 * trident.kwhPrice * 100) / 100;
-
             // This is for the Year
             sliderYearResults.innerHTML = "$" + Math.round(trident.watts / trident.kwh * this.value * 365 * trident.kwhPrice * 100) / 100;
 
@@ -208,7 +210,6 @@ function onTridentSelect() {
     }
 }
 
-
 // This is the Stealth Selection
 function onStealthSelect() {
     // This is the Model 1.5
@@ -217,9 +218,9 @@ function onStealthSelect() {
         document.getElementById("slider-and-results-wrapper").style.display = "flex";
 
         sliderHoursRangeResults.innerHTML = sliderHoursRange.value = 0;
-        sliderDayRangeResults.innerHTML = 0;
-        sliderMonthResults.innerHTML = 0;
-        sliderYearResults.innerHTML = 0;
+        sliderDayRangeResults.innerHTML = "$" + 0;
+        sliderMonthResults.innerHTML = "$" + 0;
+        sliderYearResults.innerHTML = "$" + 0;
 
         sliderHoursRange.oninput = function() {
                 sliderHoursRangeResults.innerHTML = this.value;
@@ -241,9 +242,9 @@ function onStealthSelect() {
         document.getElementById("slider-and-results-wrapper").style.display = "flex";
 
         sliderHoursRangeResults.innerHTML = sliderHoursRange.value = 0;
-        sliderDayRangeResults.innerHTML = 0;
-        sliderMonthResults.innerHTML = 0;
-        sliderYearResults.innerHTML = 0;
+        sliderDayRangeResults.innerHTML = "$" + 0;
+        sliderMonthResults.innerHTML = "$" + 0;
+        sliderYearResults.innerHTML = "$" + 0;
 
         sliderHoursRange.oninput = function() {
                 sliderHoursRangeResults.innerHTML = this.value;
@@ -265,9 +266,9 @@ function onStealthSelect() {
         document.getElementById("slider-and-results-wrapper").style.display = "flex";
 
         sliderHoursRangeResults.innerHTML = sliderHoursRange.value = 0;
-        sliderDayRangeResults.innerHTML = 0;
-        sliderMonthResults.innerHTML = 0;
-        sliderYearResults.innerHTML = 0;
+        sliderDayRangeResults.innerHTML = "$" + 0;
+        sliderMonthResults.innerHTML = "$" + 0;
+        sliderYearResults.innerHTML = "$" + 0;
 
         sliderHoursRange.oninput = function() {
                 sliderHoursRangeResults.innerHTML = this.value;
@@ -288,10 +289,23 @@ function onStealthSelect() {
     } else if (stealthSelection == "4.8") {
         document.getElementById("slider-and-results-wrapper").style.display = "flex";
 
-        sliderHoursRangeResults.innerHTML = sliderHoursRange.value = 0;
-        sliderDayRangeResults.innerHTML = 0;
-        sliderMonthResults.innerHTML = 0;
-        sliderYearResults.innerHTML = 0;
+
+        // sliderHoursRangeResults.innerHTML = sliderHoursRange.value = 8;
+
+        // var stealth = new fan(4.8, 408, 1000, .35);
+        // // This is for the day
+        // sliderDayRangeResults.innerHTML = "$" + Math.round(stealth.watts / stealth.kwh * sliderHoursRangeResults.value * stealth.kwhPrice * 100) / 100;
+
+        // // This is for the Month
+        // sliderMonthResults.innerHTML = "$" + Math.round(stealth.watts / stealth.kwh * sliderHoursRangeResults.value * 30 * stealth.kwhPrice * 100) / 100;
+
+        // // This is for the Year
+        // sliderYearResults.innerHTML = "$" + Math.round(stealth.watts / stealth.kwh * sliderHoursRangeResults.value * 365 * stealth.kwhPrice * 100) / 100;
+
+
+        sliderDayRangeResults.innerHTML = "$" + 0;
+        sliderMonthResults.innerHTML = "$" + 0;
+        sliderYearResults.innerHTML = "$" + 0;
 
         sliderHoursRange.oninput = function() {
             sliderHoursRangeResults.innerHTML = this.value;
@@ -314,9 +328,9 @@ function onStealthSelect() {
         document.getElementById("slider-and-results-wrapper").style.display = "flex";
 
         sliderHoursRangeResults.innerHTML = sliderHoursRange.value = 0;
-        sliderDayRangeResults.innerHTML = 0;
-        sliderMonthResults.innerHTML = 0;
-        sliderYearResults.innerHTML = 0;
+        sliderDayRangeResults.innerHTML = "$" + 0;
+        sliderMonthResults.innerHTML = "$" + 0;
+        sliderYearResults.innerHTML = "$" + 0;
 
         sliderHoursRange.oninput = function() {
                 sliderHoursRangeResults.innerHTML = this.value;
@@ -338,9 +352,9 @@ function onStealthSelect() {
         document.getElementById("slider-and-results-wrapper").style.display = "flex";
 
         sliderHoursRangeResults.innerHTML = sliderHoursRange.value = 0;
-        sliderDayRangeResults.innerHTML = 0;
-        sliderMonthResults.innerHTML = 0;
-        sliderYearResults.innerHTML = 0;
+        sliderDayRangeResults.innerHTML = "$" + 0;
+        sliderMonthResults.innerHTML = "$" + 0;
+        sliderYearResults.innerHTML = "$" + 0;
 
         sliderHoursRange.oninput = function() {
                 sliderHoursRangeResults.innerHTML = this.value;
@@ -362,9 +376,9 @@ function onStealthSelect() {
         document.getElementById("slider-and-results-wrapper").style.display = "flex";
 
         sliderHoursRangeResults.innerHTML = sliderHoursRange.value = 0;
-        sliderDayRangeResults.innerHTML = 0;
-        sliderMonthResults.innerHTML = 0;
-        sliderYearResults.innerHTML = 0;
+        sliderDayRangeResults.innerHTML = "$" + 0;
+        sliderMonthResults.innerHTML = "$" + 0;
+        sliderYearResults.innerHTML = "$" + 0;
 
         sliderHoursRange.oninput = function() {
             sliderHoursRangeResults.innerHTML = this.value;
@@ -385,6 +399,30 @@ function onStealthSelect() {
         alert("Please Make A Model Selection");
     }
 }
+onStealthSelect();
+
+// This are the Fixed Values
+function selectStealth() {
+    var sliderHoursRange = document.getElementById("slider-hours-range");
+    var sliderHoursRangeResults = document.getElementById("slider-hours-results");
+    var sliderDayRangeResults = document.getElementById("slider-day-results");
+    var sliderMonthResults = document.getElementById("slider-month-results");
+    var sliderYearResults = document.getElementById("slider-year-results");
+
+
+    sliderHoursRangeResults.innerHTML = sliderHoursRange.value = 8;
+
+    var stealth = new fan(4.8, 408, 1000, .35);
+    // This is for the day
+    sliderDayRangeResults.innerHTML = "$" + Math.round(408 / 1000 * 8 * .35 * 100) / 100;
+    // This is for the Month
+    sliderMonthResults.innerHTML = "$" + Math.round(408 / 1000 * 8 * 30 * .35 * 100) / 100;
+    // This is for the Year
+    sliderYearResults.innerHTML = "$" + Math.round(408 / 1000 * 8 * 365 * .35 * 100) / 100;
+}
+
+selectStealth();
+
 
 // This is the AC Section
 
@@ -393,6 +431,8 @@ var sliderMonthRangeResultsAC = document.getElementById("slider-month-results-ac
 var sliderYearRangeResultsAC = document.getElementById("slider-year-results-ac");
 var sliderHoursRangeAC = document.getElementById("slider-hours-range-ac");
 var sliderHoursRangeResultsAC = document.getElementById("slider-hours-results-ac");
+var acKwhSelection = document.getElementById("ac-kwh-selection").value = "5000";
+document.getElementById("slider-and-results-kwh-wrapper").style.display = "flex";
 
 
 function onAcKwhSelect() {
@@ -402,9 +442,9 @@ function onAcKwhSelect() {
         document.getElementById("slider-and-results-kwh-wrapper").style.display = "flex";
 
         sliderHoursRangeResultsAC.innerHTML = sliderHoursRangeAC.value = 0;
-        sliderDayRangeResultsAC.innerHTML = 0;
-        sliderMonthRangeResultsAC.innerHTML = 0;
-        sliderYearRangeResultsAC.innerHTML = 0;
+        sliderDayRangeResultsAC.innerHTML = "$" + 0;
+        sliderMonthRangeResultsAC.innerHTML = "$" + 0;
+        sliderYearRangeResultsAC.innerHTML = "$" + 0;
         sliderHoursRangeAC.oninput = function() {
             sliderHoursRangeResultsAC.innerHTML = this.value;
 
@@ -422,9 +462,9 @@ function onAcKwhSelect() {
         document.getElementById("slider-and-results-kwh-wrapper").style.display = "flex";
 
         sliderHoursRangeResultsAC.innerHTML = sliderHoursRangeAC.value = 0;
-        sliderDayRangeResultsAC.innerHTML = 0;
-        sliderMonthRangeResultsAC.innerHTML = 0;
-        sliderYearRangeResultsAC.innerHTML = 0;
+        sliderDayRangeResultsAC.innerHTML = "$" + 0;
+        sliderMonthRangeResultsAC.innerHTML = "$" + 0;
+        sliderYearRangeResultsAC.innerHTML = "$" + 0;
 
         sliderHoursRangeAC.oninput = function() {
             sliderHoursRangeResultsAC.innerHTML = this.value;
@@ -443,9 +483,9 @@ function onAcKwhSelect() {
         document.getElementById("slider-and-results-kwh-wrapper").style.display = "flex";
 
         sliderHoursRangeResultsAC.innerHTML = sliderHoursRangeAC.value = 0;
-        sliderDayRangeResultsAC.innerHTML = 0;
-        sliderMonthRangeResultsAC.innerHTML = 0;
-        sliderYearRangeResultsAC.innerHTML = 0;
+        sliderDayRangeResultsAC.innerHTML = "$" + 0;
+        sliderMonthRangeResultsAC.innerHTML = "$" + 0;
+        sliderYearRangeResultsAC.innerHTML = "$" + 0;
 
         sliderHoursRangeAC.oninput = function() {
             sliderHoursRangeResultsAC.innerHTML = this.value;
@@ -464,3 +504,26 @@ function onAcKwhSelect() {
         alert("Please Select KWH");
     }
 }
+
+onAcKwhSelect();
+
+// These are the Fixed Values
+function selectAC() {
+    var sliderDayRangeResultsAC = document.getElementById("slider-day-results-ac");
+    var sliderMonthRangeResultsAC = document.getElementById("slider-month-results-ac");
+    var sliderYearRangeResultsAC = document.getElementById("slider-year-results-ac");
+    var sliderHoursRangeAC = document.getElementById("slider-hours-range-ac");
+    var sliderHoursRangeResultsAC = document.getElementById("slider-hours-results-ac");
+
+    sliderHoursRangeResultsAC.innerHTML = sliderHoursRangeAC.value = 8;
+
+    var watts5000 = new fan(5000, 5000, 1000, .35);
+    // This is for the day
+    sliderDayRangeResultsAC.innerHTML = "$" + Math.round(5000 / 1000 * 8 * .35 * 100) / 100;
+    // This is for the Month
+    sliderMonthRangeResultsAC.innerHTML = "$" + Math.round(5000 / 1000 * 8 * 30 * .35 * 100) / 100;
+    // This is for the Year
+    sliderYearRangeResultsAC.innerHTML = "$" + Math.round(5000 / 1000 * 8 * 365 * .35 * 100) / 100;
+}
+
+selectAC();
